@@ -162,7 +162,7 @@ def run_pipeline_cli(vcf, sample_id, phenotype, sex, age):
 
         # ---- Step 8: ancestry_data_parse.py ----
         if os.path.exists(ancestry_parse_script):
-            run(["python3", "ancestry_data_parse.py"], cwd=prs_scripts_dir)
+            run(["python", "ancestry_data_parse.py"], cwd=prs_scripts_dir)
         else:
             print("⚠ ancestry_data_parse.py not found, skipping.")
 
